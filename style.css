@@ -1,0 +1,47 @@
+*{
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: linear-gradient(rgb(122, 7, 3));
+    width: 100%;
+    
+}
+h2{
+    color: white;
+    margin-top: 150px;
+}
+.container {
+      display: flex;
+      justify-content: center; /* center images */
+      gap: 20px; /* space between images */
+      margin-top: 50px;
+    }
+    .container img {
+      width: 150px;   /* image size */
+      height: auto;   /* keep aspect ratio */
+      border-radius: 10px; /* rounded corners */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* nice shadow */
+}
+input{
+    padding: 10px;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+}
+button{
+    padding: 10px;
+    background-color:yellow;
+    color: black;
+    font-weight: 700;
+    box-shadow: 0px 0px 10px;
+    border-radius: 4px;
+
+}
+p{
+    color: white;
+    font-size: 9px;
+    margin-top: 30px;
+}

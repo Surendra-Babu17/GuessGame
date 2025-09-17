@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>Guess the Number Game 1-4 🎮</h2>
+    
+     <div class="container">
+    <img src="./image/charade.png" alt="Gold Medal">
+    <img src="./image/puzzle.png" alt="Silver Medal">
+    <img src="./image/consoles.png" alt="Bronze Medal">
+     </div><br><br>
+    <input type="text" id="input" placeholder="Enter number (1-4)">
+    <button onclick="clickGame()">PLAY</button><br>
+    <p><span style="color: aquamarine;">GAME RULES:</span><br>
+    1.Attempts unlimit<br>2. First attempt You Guess Right you got Gold Medal 🥇<br>3. Second attempt You Guess Right you got Silver Medal 🥈<br>4. Third attempt You Guess Right you got Bronze Medal 🥉<br> More than Three you don't Get Medal</p>
+    
+    <script>
+        let arr = ["1", "2", "3", "4"];
+        let index = Math.floor(Math.random() * arr.length);
+        let system_generated = arr[index];  
+        let chance = 0;
+
+        function clickGame() {
+            chance++;
+            let ele = document.getElementById("input");
+            
+            if (ele.value == system_generated) {
+                if (chance == 1) {
+                    alert("WOW! 1st Guess is Right🎉 You won the Gold Medal 🥇");
+                } else if (chance == 2) {
+                    alert("HOO! Your 2nd attempt Guess is Right 🎉You won the Silver Medal 🥈");
+                } else if (chance == 3) {
+                    alert("Nice! Your 3rd attempt Guess is Right 🎉 You won the Bronze Medal 🥉");
+                } else {
+                    alert("Cool! Your Guess is Right ✅ But Out of Attempts!");
+                }
+            } else {
+                alert("❌ Hoo! sorry Miss Match Bro! Try again...");
+            }
+        }
+    </script>
+
+
+</body>
+</html>
