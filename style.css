@@ -1,4 +1,4 @@
-* General Reset */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -19,13 +19,13 @@ body {
 /* Heading */
 /* H2 Animated Text */
 h2{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: whitesmoke;
-    background-color: #ff4b2b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: black;
+    
     padding: 5PX;
     border-radius: 4px;
-    margin-left: 25%;
-    margin-right: 25%;
+   
 }
 
 /* Images container */
